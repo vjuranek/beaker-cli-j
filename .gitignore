@@ -1,4 +1,6 @@
 target/
+misc/
 .settings
 .project
 .classpath
+etc/dev.properties
