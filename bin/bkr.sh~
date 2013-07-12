@@ -1,3 +1,0 @@
-#!/bin/bash
-
-java -Djavax.net.ssl.trustStore=/home/vjuranek/public/keytabs/hudson.jks -Djavax.net.ssl.trustStorePassword=123456 -jar target/beaker-client-1.0-SNAPSHOT-jar-with-dependencies.jar -s https://beaker.engineering.redhat.com $@

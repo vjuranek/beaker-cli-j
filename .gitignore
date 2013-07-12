@@ -3,5 +3,6 @@ misc/
 .settings
 .project
 .classpath
+*~
 
 etc/
