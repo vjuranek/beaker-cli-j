@@ -57,7 +57,7 @@
                         </goals>
                         <configuration>
                             <files>
-                                <file>etc/dev.properties</file>
+                                <file>etc/mvn_dev.properties</file>
                             </files>
                         </configuration>
                     </execution>
