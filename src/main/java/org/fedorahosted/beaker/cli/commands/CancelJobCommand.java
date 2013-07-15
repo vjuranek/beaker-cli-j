@@ -1,7 +1,7 @@
 package org.fedorahosted.beaker.cli.commands;
 
 import org.apache.xmlrpc.XmlRpcException;
-import org.fedorahosted.beaker.remote_model.BeakerJob;
+import org.fedorahosted.beaker4j.remote_model.BeakerJob;
 import org.kohsuke.args4j.Option;
 
 @CliCommand(name="cancelJob", requireAuth=true)

@@ -5,10 +5,10 @@ import java.io.UnsupportedEncodingException;
 import javax.xml.bind.JAXBException;
 
 import org.apache.xmlrpc.XmlRpcException;
-import org.fedorahosted.beaker.model.Job;
-import org.fedorahosted.beaker.model.Task;
-import org.fedorahosted.beaker.remote_model.BeakerJob;
-import org.fedorahosted.beaker.util.BeakerModelUtils;
+import org.fedorahosted.beaker4j.model.Job;
+import org.fedorahosted.beaker4j.model.Task;
+import org.fedorahosted.beaker4j.remote_model.BeakerJob;
+import org.fedorahosted.beaker4j.util.BeakerModelUtils;
 import org.kohsuke.args4j.Option;
 
 @CliCommand(name="jobInfo", requireAuth=true)

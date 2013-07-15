@@ -1,6 +1,6 @@
 package org.fedorahosted.beaker.cli.commands;
 
-import org.fedorahosted.beaker.remote_model.Identity;
+import org.fedorahosted.beaker4j.remote_model.Identity;
 import org.kohsuke.args4j.Option;
 
 @CliCommand(name="auth")

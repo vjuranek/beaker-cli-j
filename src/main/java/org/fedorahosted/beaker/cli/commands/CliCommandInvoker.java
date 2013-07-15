@@ -3,9 +3,9 @@ package org.fedorahosted.beaker.cli.commands;
 import java.lang.annotation.Annotation;
 import java.util.Set;
 
-import org.fedorahosted.beaker.client.BeakerClient;
-import org.fedorahosted.beaker.client.BeakerClientFactory;
-import org.fedorahosted.beaker.xmlrpc.client.BeakerXmlRpcClientFactory;
+import org.fedorahosted.beaker4j.client.BeakerClient;
+import org.fedorahosted.beaker4j.client.BeakerClientFactory;
+import org.fedorahosted.beaker4j.xmlrpc.client.BeakerXmlRpcClientFactory;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.reflections.Reflections;
