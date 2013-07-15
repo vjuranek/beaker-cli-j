@@ -3,7 +3,7 @@ package org.fedorahosted.beaker.cli.commands;
 import org.apache.xmlrpc.XmlRpcException;
 import org.fedorahosted.beaker.client.Command;
 import org.fedorahosted.beaker.remote_model.BeakerTask;
-import org.fedorahosted.beaker.remote_model.TaskState;
+import org.fedorahosted.beaker.remote_model.TaskStatus;
 import org.kohsuke.args4j.Option;
 
 @CliCommand(name="extendTask", requireAuth=true)
@@ -21,8 +21,8 @@ public class ExtendTaskCommand extends Command {
     public void execute() {
         BeakerTask task = new BeakerTask(taskId,beakerClient);
         try {
-            TaskState state = task.getInfo().getState();
-            if(!TaskState.Running.equals(state)) {
+            TaskStatus state = task.getInfo().getState();
+            if(!TaskStatus.Running.equals(state)) {
                 System.out.println("Task " + taskId + " is not running. Task is in state " + state);
                 return;
             }

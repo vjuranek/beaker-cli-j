@@ -26,7 +26,7 @@ public class ResultTest {
         assertEquals("2138849", result.getId());
         assertEquals("/distribution/reservesys", result.getPath());
         assertEquals("0.00", result.getScore());
-        assertEquals(TaskResult.Pass.toString(), result.getResult());
+        assertEquals(TaskResult.PASS.toString(), result.getResult());
     }
 
 }
