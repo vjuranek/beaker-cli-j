@@ -1,4 +1,4 @@
-package org.fedorahosted.beaker.model;
+package org.fedorahosted.beaker.remote_model;
 
 import org.apache.xmlrpc.XmlRpcException;
 import org.fedorahosted.beaker.client.BeakerClient;

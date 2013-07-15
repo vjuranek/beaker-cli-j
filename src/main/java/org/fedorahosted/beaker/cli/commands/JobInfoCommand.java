@@ -6,9 +6,9 @@ import javax.xml.bind.JAXBException;
 
 import org.apache.xmlrpc.XmlRpcException;
 import org.fedorahosted.beaker.client.Command;
-import org.fedorahosted.beaker.model.BeakerJob;
-import org.fedorahosted.beaker.model.beakermodel.Job;
-import org.fedorahosted.beaker.model.beakermodel.Task;
+import org.fedorahosted.beaker.model.Job;
+import org.fedorahosted.beaker.model.Task;
+import org.fedorahosted.beaker.remote_model.BeakerJob;
 import org.fedorahosted.beaker.util.BeakerModelUtils;
 import org.kohsuke.args4j.Option;
 

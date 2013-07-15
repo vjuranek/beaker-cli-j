@@ -9,9 +9,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
-import org.fedorahosted.beaker.model.TaskResult;
-import org.fedorahosted.beaker.model.beakermodel.Job;
-import org.fedorahosted.beaker.model.beakermodel.Task;
+import org.fedorahosted.beaker.model.Job;
+import org.fedorahosted.beaker.model.Task;
+import org.fedorahosted.beaker.remote_model.TaskResult;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package org.fedorahosted.beaker.model;
+package org.fedorahosted.beaker.remote_model;
 
 public enum TaskState {
 

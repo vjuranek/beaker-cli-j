@@ -1,7 +1,7 @@
 package org.fedorahosted.beaker.cli.commands;
 
 import org.fedorahosted.beaker.client.Command;
-import org.fedorahosted.beaker.model.Identity;
+import org.fedorahosted.beaker.remote_model.Identity;
 
 @CliCommand(name="WhoAmI")
 public class WhoAmICliCommand extends Command {

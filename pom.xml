@@ -76,7 +76,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <packageName>org.fedorahosted.beaker.model.beakermodel</packageName>
+                    <packageName>org.fedorahosted.beaker.model</packageName>
                 </configuration>
             </plugin>
             <plugin>

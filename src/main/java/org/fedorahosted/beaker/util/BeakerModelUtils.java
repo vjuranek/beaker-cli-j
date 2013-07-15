@@ -3,10 +3,10 @@ package org.fedorahosted.beaker.util;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.fedorahosted.beaker.model.beakermodel.Job;
-import org.fedorahosted.beaker.model.beakermodel.Recipe;
-import org.fedorahosted.beaker.model.beakermodel.RecipeSet;
-import org.fedorahosted.beaker.model.beakermodel.Task;
+import org.fedorahosted.beaker.model.Job;
+import org.fedorahosted.beaker.model.Recipe;
+import org.fedorahosted.beaker.model.RecipeSet;
+import org.fedorahosted.beaker.model.Task;
 
 public class BeakerModelUtils {
 

@@ -1,4 +1,6 @@
-package org.fedorahosted.beaker.model.beakermodel;
+package org.fedorahosted.beaker.model;
+
+import static org.junit.Assert.assertEquals;
 
 import java.io.File;
 import java.net.URISyntaxException;
@@ -7,9 +9,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
-import org.fedorahosted.beaker.model.TaskResult;
+import org.fedorahosted.beaker.model.Result;
+import org.fedorahosted.beaker.remote_model.TaskResult;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
 
 public class ResultTest {
     
