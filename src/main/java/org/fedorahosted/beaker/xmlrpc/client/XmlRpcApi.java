@@ -1,16 +1,26 @@
 package org.fedorahosted.beaker.xmlrpc.client;
 
+/**
+ * Lists Beaker XML-RPC API
+ * See {@link http://beaker-project.org/docs/server-api/xmlrpc.html} for details
+ * 
+ * @author vjuranek
+ *
+ */
+
 public enum XmlRpcApi {
 	
-	AUTH("auth.login_password"),
-	JOB_CANCEL("jobs.stop"),
-	JOB_XML("jobs.to_xml"),
-	JOB_UPLOAD("jobs.upload"),
-	TASK_EXTEND("recipes.tasks.extend"),
-	TASK_INFO("taskactions.task_info"),
-	TASK_RESULTS("taskactions.to_xml"),
-	WATCHDOG_SHOW("recipes.tasks.watchdog"),
-	WHO_AM_I("auth.who_am_i");
+	AUTH_LOGIN_PASSWORD("auth.login_password"),
+	AUTH_LOGOUT("auth.logout"),
+	AUTH_WHO_AM_I("auth.who_am_i"),
+	JOBS_STOP("jobs.stop"),
+	JOBS_TO_XML("jobs.to_xml"),
+	JOBS_UPLOAD("jobs.upload"),
+	RECIPES_TASKS_EXTEND("recipes.tasks.extend"),
+	RECIPES_TASKS_WATCHDOG("recipes.tasks.watchdog"),
+	TASKACTIONS_TASK_INFO("taskactions.task_info"),
+	TASKACTIONS_TO_XML("taskactions.to_xml");
+	
 	
 	private String rpc;
 	

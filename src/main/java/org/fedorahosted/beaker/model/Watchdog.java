@@ -13,7 +13,7 @@ public class Watchdog extends RemoteBeakerObject {
     public int getRemaingTime(int taskId) throws XmlRpcException {
         System.out.println("Getting time for " + taskId);
         //TODO need a check if job is running
-        return (Integer)callOnBeaker(XmlRpcApi.WATCHDOG_SHOW, new Object[] {taskId});
+        return (Integer)callOnBeaker(XmlRpcApi.RECIPES_TASKS_WATCHDOG, new Object[] {taskId});
     }
 
 }

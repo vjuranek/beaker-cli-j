@@ -36,7 +36,7 @@ public class BeakerJob extends RemoteBeakerObject {
     
     public String getJobXml() throws XmlRpcException {
         @SuppressWarnings("unchecked")
-        String resp = (String)callOnBeaker(XmlRpcApi.JOB_XML, new Object[] {getId()});
+        String resp = (String)callOnBeaker(XmlRpcApi.JOBS_TO_XML, new Object[] {getId()});
         int beg = resp.indexOf("<job");
         int end = resp.indexOf("</job>") + 6;
         String jobStr = resp.substring(beg, end);
@@ -46,7 +46,7 @@ public class BeakerJob extends RemoteBeakerObject {
     
     public void cancel(String message) throws XmlRpcException {
         System.out.println("jobId je " + jobId);
-        callOnBeaker(XmlRpcApi.JOB_CANCEL, new Object[] {getId(), StopType.cancel.toString(), message});
+        callOnBeaker(XmlRpcApi.JOBS_STOP, new Object[] {getId(), StopType.cancel.toString(), message});
     }
     
     

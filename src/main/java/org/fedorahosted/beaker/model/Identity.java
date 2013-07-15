@@ -58,7 +58,7 @@ public class Identity extends RemoteBeakerObject {
     public boolean authenticate(String login, String passwd) {
         try {
             @SuppressWarnings("unchecked")
-            HashMap<String, ?> o = (HashMap<String, ?>) callOnBeaker(XmlRpcApi.AUTH, new Object[] {login, passwd});
+            HashMap<String, ?> o = (HashMap<String, ?>) callOnBeaker(XmlRpcApi.AUTH_LOGIN_PASSWORD, new Object[] {login, passwd});
         } catch(XmlRpcException e){
             return false;
         }
@@ -69,7 +69,7 @@ public class Identity extends RemoteBeakerObject {
         Map<String,String> me = new HashMap<String,String>(); 
         try{
             //@SuppressWarnings("unchecked")
-            me = (Map<String,String>)callOnBeaker(XmlRpcApi.WHO_AM_I, new Object[] {});
+            me = (Map<String,String>)callOnBeaker(XmlRpcApi.AUTH_WHO_AM_I, new Object[] {});
         } catch(XmlRpcException e) {
             if(e.getMessage().contains("Please log in first")) {
                 me.put("username", "unauthenticated");   
