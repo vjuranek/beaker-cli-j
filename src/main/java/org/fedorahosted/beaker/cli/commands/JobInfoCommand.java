@@ -5,7 +5,6 @@ import java.io.UnsupportedEncodingException;
 import javax.xml.bind.JAXBException;
 
 import org.apache.xmlrpc.XmlRpcException;
-import org.fedorahosted.beaker.client.Command;
 import org.fedorahosted.beaker.model.Job;
 import org.fedorahosted.beaker.model.Task;
 import org.fedorahosted.beaker.remote_model.BeakerJob;

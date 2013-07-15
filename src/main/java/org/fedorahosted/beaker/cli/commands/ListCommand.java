@@ -1,6 +1,5 @@
 package org.fedorahosted.beaker.cli.commands;
 
-import org.fedorahosted.beaker.client.Command;
 
 @CliCommand(name="list")
 public class ListCommand extends Command {
