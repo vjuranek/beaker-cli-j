@@ -22,7 +22,7 @@ public class ExtendTaskCommand extends Command {
         BeakerTask task = new BeakerTask(taskId,beakerClient);
         try {
             TaskStatus state = task.getInfo().getState();
-            if(!TaskStatus.Running.equals(state)) {
+            if(!TaskStatus.RUNNING.equals(state)) {
                 System.out.println("Task " + taskId + " is not running. Task is in state " + state);
                 return;
             }

@@ -31,14 +31,14 @@ public class BeakerModelUtilsTest {
     public void getTaskById() {
         Task task = BeakerModelUtils.getJobTaskById(job, 687991);
         assertEquals("/distribution/reservesys", task.getName());
-        assertEquals(TaskResult.WARN, TaskResult.valueOf(task.getResult()));
+        assertEquals(TaskResult.WARN, TaskResult.valueOf(task.getResult().toUpperCase()));
     }
     
     @Test
     public void getTaskName() {
         Task task = BeakerModelUtils.getJobTaskByName(job, "/distribution/reservesys");
         assertEquals(687991, Integer.decode(task.getId()).intValue());
-        assertEquals(TaskResult.WARN, TaskResult.valueOf(task.getResult()));
+        assertEquals(TaskResult.WARN, TaskResult.valueOf(task.getResult().toUpperCase()));
     }
     
 }
